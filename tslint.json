@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "class-name": true,
+    "no-var-keyword": true,
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-type"
+    ],
+    "no-internal-module": true,
+    "no-null-keyword": true,
+    "prefer-const": true,
+    "jsdoc-format": true,
+    "no-console": [false, "log"],
+    "no-any": false
+  }
+}
