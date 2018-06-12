@@ -5,10 +5,15 @@ https://treehouse.github.io/installation-guides/mac/mongo-mac.html
 
 - npm install
 
+# Environment
+In the root folder is available a file called `.env`. It contains all the configuration environment for:
+1. mongo db
+2. google-sign-in as identity server for authentication and authorisation. More info available at http://www.dzurico.com/apollo-server-2-0-auth-with-google-signin/ 
+
 # available commands
 
 ## to run in your local environment:
-`npm run dev`
+`npm run start`
 
 it will automatically rerun your code all the time you save and will check for tslint errors and formatting style errors.
 

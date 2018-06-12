@@ -28,6 +28,7 @@
   },
   "scripts": {
     "dev": "nodemon --watch src && tslint-check",
+    "start": "nodemon ./src/server.ts",
     "build": "tsc",
     "prod": "npm run build  && npm run tslint && npm run start-prod",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
