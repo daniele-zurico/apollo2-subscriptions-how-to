@@ -3,9 +3,6 @@
 - install mongodb
 https://treehouse.github.io/installation-guides/mac/mongo-mac.html
 
-- create a db called `graphExample`
-- create a collection called `users` that contains `name` and `surname`
-
 - npm install
 
 # available commands
