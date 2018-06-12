@@ -66,7 +66,7 @@ subscription {
 }
 ```
 
-![alt text](https://github.com/daniele-zurico/apollo2-subscriptions-how-to/blob/master/subscription.gif.sb-387ed9d5-htZP9e)
+![alt text](https://github.com/daniele-zurico/apollo2-subscriptions-how-to/blob/master/subscription.gif)
 
 For a quick tutorial on how I setup this repro please refer to: http://www.dzurico.com/apolloserver-2-0-how-to-create-a-graphql-server/
 
