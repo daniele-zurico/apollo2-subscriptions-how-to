@@ -13,7 +13,7 @@ https://treehouse.github.io/installation-guides/mac/mongo-mac.html
 it will automatically rerun your code all the time you save and will check for tslint errors and formatting style errors.
 
 ### Webstorm
-![alt text](https://github.com/daniele-zurico/graphql-setup/blob/graph2/webstorm-prettier.jpg)
+![alt text](https://github.com/daniele-zurico/apollo2-subscriptions-how-to/blob/graph2/webstorm-prettier.jpg)
 ### VS Code
 prettier-vscode can be installed using the extension sidebar. Search for Prettier - Code formatter. It can also be installed using ext install prettier-vscode in the command palette.
 ### Other editors
@@ -65,6 +65,8 @@ subscription {
     }
 }
 ```
+
+![alt text](https://github.com/daniele-zurico/apollo2-subscriptions-how-to/blob/master/subscription.gif.sb-387ed9d5-htZP9e)
 
 For a quick tutorial on how I setup this repro please refer to: http://www.dzurico.com/apolloserver-2-0-how-to-create-a-graphql-server/
 
