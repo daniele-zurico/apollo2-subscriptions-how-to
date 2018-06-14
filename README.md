@@ -23,7 +23,7 @@ In the root folder is available a file called `.env`. It contains all the config
 ## available commands
 
 ### to run in your local environment:
-`npm run start`
+`npm run dev`
 
 it will automatically rerun your code all the time you save and will check for tslint errors and formatting style errors.
 
