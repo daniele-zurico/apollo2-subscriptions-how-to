@@ -7,4 +7,4 @@ const postType = gql`
 	}
 `;
 
-export default postType;
+export { postType };

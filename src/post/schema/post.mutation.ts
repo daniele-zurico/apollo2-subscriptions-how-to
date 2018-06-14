@@ -5,4 +5,4 @@ const postMutation = gql`
 		addPost(author: String, comment: String): Post
 	}
 `;
-export default postMutation;
+export { postMutation };

@@ -6,4 +6,4 @@ const postSubscription = gql`
 	}
 `;
 
-export default postSubscription;
+export { postSubscription };

@@ -6,4 +6,4 @@ const postQuery = gql`
 	}
 `;
 
-export default postQuery;
+export { postQuery };
