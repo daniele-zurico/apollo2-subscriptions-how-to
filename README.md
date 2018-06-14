@@ -6,6 +6,7 @@ It integrates:
 - subscriptions (real-time data)
 - authentication and authorisation (using google sign-on as provider server)
 - schema stitching
+- mongo db
 
 ## Installation:
 
