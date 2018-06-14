@@ -40,8 +40,7 @@ https://prettier.io/docs/en/editors.html
 - Open your browser to this address: http://localhost:4000 and run the available commands:
 
 1. hello world
-```graphQL
-query {
+```graphQL query {
   hello
 }
 ```
@@ -78,7 +77,7 @@ subscription {
 
 5. fetch all the users (you need to be authenticated with google identity server):
 For more information how to setup: http://www.dzurico.com/apollo-server-2-0-auth-with-google-signin/
-```graphQL
+```graphQL 
 query{
   users {
     id
