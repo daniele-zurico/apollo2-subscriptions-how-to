@@ -37,7 +37,7 @@ https://prettier.io/docs/en/editors.html
 
 
 ### Playground
-- OPen your to this address: http://localhost:4000 and run the available commands:
+- Open your browser to this address: http://localhost:4000 and run the available commands:
 
 1. fetch all the posts:
 ```
