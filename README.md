@@ -7,7 +7,7 @@ It integrates:
 - authentication and authorisation (using google sign-on as provider server)
 - schema stitching
 - mongo db
-- logger (it will create a file `error.log` and write on it in case of error - to change the level edit  `common/util/logger.ts` lines 12,13,14 )
+- logger (it will create a file `error.log` and write on it in case of error - to change the level edit  `common/util/logger.ts` lines 12, 13, 14 )
 
 ## Installation:
 
