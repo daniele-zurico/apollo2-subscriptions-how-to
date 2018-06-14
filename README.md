@@ -40,7 +40,7 @@ https://prettier.io/docs/en/editors.html
 - Open your browser to this address: http://localhost:4000 and run the available commands:
 
 1. fetch all the posts:
-```js
+```json
 query {
   posts {
     author
@@ -49,7 +49,7 @@ query {
 }
 ```
 2. add a new post
-```js
+```json
 mutation {
   addPost(author: "Daniele Zurico", comment: "www.dzurico.com") {
     author
@@ -60,7 +60,7 @@ mutation {
 
 3. realtime data (Subscription) for post
 
-```js
+```json
 subscription {
     postAdded {
       author
@@ -72,7 +72,7 @@ subscription {
 
 4. fetch all the users (you need to be authenticated with google identity server):
 For more information how to setup: http://www.dzurico.com/apollo-server-2-0-auth-with-google-signin/
-```js
+```json
 query{
   users {
     id
