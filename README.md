@@ -1,4 +1,4 @@
-#Apollo server 2.0 
+# Apollo server 2.0 
 This project is a good starting point for all the people that want to have apollo-server 2.0 ready to use.
 It integrates:
 - queries
