@@ -40,7 +40,8 @@ https://prettier.io/docs/en/editors.html
 - Open your browser to this address: http://localhost:4000 and run the available commands:
 
 1. hello world
-```graphQL query {
+```graphQL
+query {
   hello
 }
 ```
