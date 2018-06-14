@@ -62,10 +62,10 @@ mutation {
 
 ```graphQL
 subscription {
-    postAdded {
-      author
-      comment
-    }
+  postAdded {
+    author
+    comment
+  }
 }
 ```
 ![alt text](https://github.com/daniele-zurico/apollo2-subscriptions-how-to/blob/master/subscription.gif)
