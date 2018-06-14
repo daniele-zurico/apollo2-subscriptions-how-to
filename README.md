@@ -39,7 +39,14 @@ https://prettier.io/docs/en/editors.html
 ### Playground
 - Open your browser to this address: http://localhost:4000 and run the available commands:
 
-1. fetch all the posts:
+1. hello world
+```graphQL
+query {
+  hello
+}
+```
+
+2. fetch all the posts:
 ```graphQL
 query {
   posts {
@@ -48,7 +55,7 @@ query {
   }
 }
 ```
-2. add a new post
+3. add a new post
 ```graphQL
 mutation {
   addPost(author: "Daniele Zurico", comment: "www.dzurico.com") {
@@ -58,8 +65,7 @@ mutation {
 }
 ```
 
-3. realtime data (Subscription) for post
-
+4. realtime data (Subscription) for post
 ```graphQL
 subscription {
   postAdded {
@@ -70,7 +76,7 @@ subscription {
 ```
 ![alt text](https://github.com/daniele-zurico/apollo2-subscriptions-how-to/blob/master/subscription.gif)
 
-4. fetch all the users (you need to be authenticated with google identity server):
+5. fetch all the users (you need to be authenticated with google identity server):
 For more information how to setup: http://www.dzurico.com/apollo-server-2-0-auth-with-google-signin/
 ```graphQL
 query{
