@@ -1,12 +1,12 @@
 import dotenv from "dotenv";
 import fs from "fs";
-
+import logger from "./logger";
 console.log(process.env.NODE_ENV);
 if (fs.existsSync(".env")) {
-	console.log("Using .env file to supply config environment variables");
+	logger.log("info", "Using .env file to supply config environment variables");
 	dotenv.config({ path: ".env" });
 } else {
-	console.log("NO ENV DEFINED");
+	logger.emerg("NO ENV DEFINED");
 }
 
 export const MONGO_PORT = process.env.MONGO_PORT;
