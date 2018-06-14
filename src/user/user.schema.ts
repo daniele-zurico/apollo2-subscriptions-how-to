@@ -20,8 +20,9 @@ const userSchema: GraphQLSchema = makeExecutableSchema({
 			family_name: String
 			locale: String
 		}
+
 	`
 });
 addMockFunctionsToSchema({ schema: userSchema });
 
-export default userSchema;
+export { userSchema };

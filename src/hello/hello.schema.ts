@@ -14,4 +14,4 @@ const helloSchema: GraphQLSchema = makeExecutableSchema({
 });
 addMockFunctionsToSchema({ schema: helloSchema });
 
-export default helloSchema;
+export { helloSchema };

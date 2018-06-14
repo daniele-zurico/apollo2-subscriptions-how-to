@@ -6,4 +6,4 @@ const helloResolver = {
 	}
 };
 
-export default helloResolver;
+export { helloResolver };

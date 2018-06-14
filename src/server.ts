@@ -3,13 +3,22 @@ import mongoose from "mongoose";
 import { GraphQLSchema } from "graphql";
 import { mergeSchemas } from "graphql-tools";
 const { OAuth2Client } = require("google-auth-library");
-import schemas from "./schemas/schema";
-import resolvers from "./resolvers/resolvers";
-import { userController } from "./controllers/controllers";
 
-import { CLIENT_ID, DB_NAME, MONGO_PORT, MONGO_URL } from "./util/secrets";
+import dotenv from "dotenv";
+import {
+	CLIENT_ID,
+	DB_NAME,
+	MONGO_PORT,
+	MONGO_URL
+} from "./common/util/secrets";
+import { userController } from "./user/user.controller";
+import schemas from "./schema";
+import resolvers from "./resolvers";
 
 export const pubsub = new PubSub();
+
+// Load environment variables from .env file, where API keys and passwords are configured
+dotenv.config({ path: ".env" });
 
 export const client = new OAuth2Client(CLIENT_ID);
 // help to debug mongoose
@@ -27,16 +36,17 @@ const server = new ApolloServer({
 	schema,
 	context: async ({ req }: any) => {
 		if (!req || !req.headers) {
-      		return;
-    	}
+			return;
+		}
+
 		const token = req.headers.authorization || "";
 		const checkToken = await userController.findOrCreateUser(token);
-		if (!checkToken.hasOwnProperty('authorized')) {
-			return {user: checkToken, authorized: true};
-		}	
+		if (!checkToken.hasOwnProperty("authorized")) {
+			return { user: checkToken, authorized: true };
+		}
 		return checkToken;
 	},
-	tracing: true,
+	tracing: true
 });
 
 server.listen().then(({ url }) => {

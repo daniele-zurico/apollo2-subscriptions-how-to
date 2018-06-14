@@ -1,13 +1,13 @@
-import { User } from "../models/users";
 import { client } from "../server";
-import { CLIENT_ID } from "../util/secrets";
+import { CLIENT_ID } from "../common/util/secrets";
+import { User } from "./user.model";
 
 const userController = {
 	users: (root: any, args: any) => User.find({}),
 
 	findOrCreateUser: async (token: string) => {
 		if (!token) {
-			return {authorized: false};
+			return { authorized: false };
 		}
 		const googleUser = await userController.verifyGoogleToken(token);
 		const user = await userController.checkIfUserExists(googleUser.email);
@@ -26,12 +26,12 @@ const userController = {
 		const newUser = new User(user);
 		return newUser.save();
 	},
-	verifyGoogleToken: async (token: string) => {	
+	verifyGoogleToken: async (token: string) => {
 		const ticket = await client.verifyIdToken({
 			idToken: token,
 			audience: CLIENT_ID
 		});
-		return ticket.getPayload();	
+		return ticket.getPayload();
 	}
 };
 
