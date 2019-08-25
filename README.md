@@ -17,7 +17,7 @@ It integrates:
 
 ## Environment
 In the root folder is available a file called `.env`. It contains all the configuration environment for:
-1. mongo db
+1. mongodb
 2. google-sign-in as identity server for authentication and authorisation. More info available at http://www.dzurico.com/apollo-server-2-0-auth-with-google-signin/ 
 
 ## available commands
@@ -88,7 +88,7 @@ query{
 }
 ```
 
-For a better explanation on how I setup this repro please refer to:
+For a better explanation on how I setup this repo please refer to:
 1. http://www.dzurico.com/apolloserver-2-0-how-to-create-a-graphql-server/
 2. http://www.dzurico.com/apollo-server-2-0-auth-with-google-signin/
 3. http://www.dzurico.com/apollo-server-2-0-real-time-data-with-subscriptions/
